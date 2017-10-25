@@ -19,6 +19,7 @@ border: 2px solid darkgreen;  */
   background-image: url('../img/Pringle.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width:auto;
   min-height:75vh;
   padding: 2%;
@@ -81,23 +82,22 @@ input{
   color:#857A76;
   border-radius: #857A76;
 }
+/* font styles for header and paragraph
+border: 2px solid darkgreen;
+  @media only screen and (mam-width:150px) and (max-width:600px) {
+  */
 
-.advertise{
-  background-image: url('../img/pringleavenue.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width:auto;
-}
+  @media (max-with:720px){
 
-@media (max-width:568px) {
-  h1 {
-  display: block;
-  font-size: 18px;
-  color: green;
+    input {
+      width: 30%;
+      padding: 0%;
+      color: pink;
     }
 
-  @media (max-width:568px) {
-  .comingsoon div {
-    height: 25vh;
-    width: 10vw;
+    .submit{
+      width: 30%;
+      padding: 0%;
+    }
+
   }
