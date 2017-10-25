@@ -20,8 +20,8 @@ border: 2px solid darkgreen;  */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width:auto;
-  min-height:75vh;
+  width: auto;
+  min-height: 75vh;
   padding: 2%;
   display: flex;
   justify-content: center;
@@ -94,5 +94,3 @@ input{
       width: 30%;
       padding: 0%;
     }
-
-  
