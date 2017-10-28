@@ -1,17 +1,30 @@
 
 * {
-  font-family: 'Raleway', sans-serif;
   /* font styles for header and paragraph
 border: 2px solid darkgreen;  */
+}
+@font-face {
+  font-family: 'minon';
+  src: url(minon.ttf);
+}
+@font-face {
+  font-family: 'freight';
+  src: url(Freight.otf);
 }
 
 .gables{
   width: auto;
   height: 15vh;
   background-color: #857A76;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2% 2%;
   }
 
@@ -20,41 +33,53 @@ border: 2px solid darkgreen;  */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: auto;
-  min-height: 75vh;
+  width:auto;
+  min-height:75vh;
   padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .comingsoon h1,p{
   color: #857A76;
   text-align: center;
-  font-size: 25px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 34px;
+  font-family:'freight';
 }
 
 .comingsoon div{
   background-color: rgba(255, 255,255, 1.5);
   padding: 0%;
   opacity: 0.8;
-  height: 35vh;
-  width: 55vw;
+  height: 38vh;
+  width: 45vw;
   }
 
 P{
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-family: 'minion';
 }
 
 form{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: block;
-  font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-family: 'minion';
   text-align: center;
   margin: 2% auto;
   width: 29.6rem;
@@ -64,18 +89,23 @@ form{
 input{
   background-color: white;
   color: #857A76;
-  width: 70%;
-  padding: 3%;
+  width: 40%;
+  padding: 2%;
+  font-family:'minion';
+  font-size: 18px;
+  border: 1px solid #857A76;
 }
 
 .submit{
   background-color: #857A76;
   border: #857A76;
   color: white;
-  width: 76%;
+  width: 50%;
   padding: 2%;
+  font-family:'minion';
+  font-size: 16px;
+  border: 1px solid #857A76;
 }
-
 
 .submit:hover{
   background-color: white;
@@ -83,14 +113,30 @@ input{
   border-radius: #857A76;
 }
 
-  @media (max-with:720px) {
+@media (max-width: 960px) {
 
-       input {
-      width: 30%;
-      padding: 0%;
-      color: pink;
+.comingsoon h1 {
+  font-size: 55px;
+}
+
+.comingsoon p{
+  font-size: 30px;
+  padding: 2px;
+}
+  .comingsoon div {
+    width:auto;
     }
-    .submit{
-      width: 30%;
-      padding: 0%;
+
+    form {
+      width: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
     }
+}
